@@ -67,7 +67,7 @@ main {
   margin-top: 20px;
 }
 
-#ficha {
+section#ficha {
   grid-column: 2;
   background-color: var(--fundo-card);
   padding: 20px;
@@ -99,6 +99,7 @@ div#social {
   align-items: center;
   font-size: 1.5em;
   gap: 0.5em;
+  margin-top: 10px;
 }
 
 div#social a {
@@ -109,4 +110,36 @@ div#social a {
 div#social a:hover {
   color: var(--destaque-inverso);
   transition: color 0.3s;
+}
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+article h2 {
+  color: var(--destaque);
+}
+
+article#video .video-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
 }
