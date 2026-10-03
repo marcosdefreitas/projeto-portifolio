@@ -23,11 +23,21 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #0077ff;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #444444;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -75,6 +85,7 @@ section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #ficha img {
@@ -117,6 +128,7 @@ div#social a:hover {
 
 section#detalhes {
   grid-column: 2;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 article {
@@ -129,6 +141,10 @@ article {
 article h2 {
   color: var(--destaque);
   margin-bottom: 15px;
+}
+
+article#video {
+  transition: background-color 0.3s, color 0.3s;
 }
 
 article#video .video-container {
@@ -152,6 +168,7 @@ article#video .video-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #skill-container .info {
@@ -190,6 +207,7 @@ article#video .video-container {
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #formacao-container .curso {
@@ -222,6 +240,7 @@ article#video .video-container {
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #projeto-container .projeto {
